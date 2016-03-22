@@ -3,11 +3,11 @@
 
 
 def bubble_sort(nums):
-    numsLen = len(nums)
-    if numsLen < 2:
+    nums_len = len(nums)
+    if nums_len < 2:
         return nums
-    for i in range(numsLen - 1):
-        for j in range(numsLen - i - 1):
+    for i in range(nums_len - 1):
+        for j in range(nums_len - i - 1):
             if nums[j] > nums[j + 1]:
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
     return nums

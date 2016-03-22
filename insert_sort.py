@@ -3,10 +3,10 @@
 
 
 def insert_sort(nums):
-    numsLen = len(nums)
-    if numsLen < 2:
+    nums_len = len(nums)
+    if nums_len < 2:
         return nums
-    for i in range(1, numsLen):
+    for i in range(1, nums_len):
         key = nums[i]
         j = i - 1
         while j >= 0 and nums[j] > key:
